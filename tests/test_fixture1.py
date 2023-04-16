@@ -2,11 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 link = "http://selenium1py.pythonanywhere.com/"
 
-
+#setup и teardown - ключевые слова см https://docs.pytest.org/en/latest/how-to/xunit_setup.html
 class TestMainPage1():
 
-    @classmethod
-    def setup_class(self):
+    @classmethod #добавляется для читаемости кода
+    def setup_class(self): #важно что в названии есть _class поэтому выполняется в начале/конце всех тестов
         print("\nstart browser for test suite..")
         self.browser = webdriver.Chrome()
 
@@ -28,7 +28,7 @@ class TestMainPage1():
 
 class TestMainPage2():
 
-    def setup_method(self):
+    def setup_method(self): #важно что в названии есть _method поэтому испольняется в начале/конце каждого теста
         print("start browser for test..")
         self.browser = webdriver.Chrome()
 
