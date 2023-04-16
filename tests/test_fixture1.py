@@ -5,7 +5,7 @@ link = "http://selenium1py.pythonanywhere.com/"
 #setup и teardown - ключевые слова см https://docs.pytest.org/en/latest/how-to/xunit_setup.html
 class TestMainPage1():
 
-    @classmethod #добавляется для читаемости кода
+    @classmethod #декоратор + для читаемости кода
     def setup_class(self): #важно что в названии есть _class поэтому выполняется в начале/конце всех тестов
         print("\nstart browser for test suite..")
         self.browser = webdriver.Chrome()
