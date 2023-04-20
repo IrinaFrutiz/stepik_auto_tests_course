@@ -1,2 +1,3 @@
 # stepik_auto_tests_course
-домашние задания к курсу
+домашние задания к курсу https://stepik.org/course/575/syllabus
+вы можете поставить оценку тут https://stepik.org/lesson/187065/step/11?unit=161976
